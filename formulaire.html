@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire simple</title>
+</head>
+<body>
+    <h1>Gestion d'un formulaire</h1>
+    <form method="post" action="traitemet.php">
+       <fieldset>
+            <legend>remplir le formulaire</legend>
+
+            <labe>&#160;Nom</labe>
+            <input type="text" name="Nom">
+
+            <labe>&#160;&#160;Prenom</labe>
+            <input type="text" name="prenom"><br><br>
+
+            <labe>&#160;Email</labe>
+            <input type="email" name="Email">
+
+            <labe>&#160;Mot de passe</labe>
+            <input type="password" name="Mot de passe"><br><br>
+
+            <label>De quel pays étes-vous ?</label><br><br>
+            <input type="radio" name="pays" value="DAKAR">Dakar<br><br>
+            <input type="radio" name="pays" value="Linguere">Linguere<br><br>
+            <input type="radio" name="pays" value="Thies">Thies<br><br>
+            <input type="radio" name="pays" value="Louga">Louga<br><br>
+        
+            <label>étes-vous un homme ou une femme ?</label><br><br>
+            <select name="SEXE" id="">
+               <option value="Homme">Homme</option> 
+               <option value="Femme">Femme</option> 
+               <option value="Autres">Autres</option> 
+            </select><br>
+            <br><label>Commentaire</label><br>
+            <textarea cols="30" rows="10"></textarea><br>
+            <br><input type="submit" name="Envoyer"><br>
+        </fieldset>
+    </form>
+    <br><br>
+    <a href="formulaire.html" target="_parent">Retour vers la page d'Accueil</a>
+</body>
+</html>
